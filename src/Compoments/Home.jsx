@@ -19,7 +19,7 @@ function Home() {
       <div className="bg-Homebg h-screen bg-center  bg-no-repeat">
         <Header />
 
-        <div className="h-[80%] flex flex-col justify-center items-center space-y-8">
+        <div className="h-[80%] flex flex-col justify-center items-center space-y-8 pt-20">
           <div className="text-white text-center text-2xl sm:text-4xl">
             <p className="font-bold  ">Are You a Supplier?</p>
             <p className="font-light">Explore Matching Opportunities.</p>
