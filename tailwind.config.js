@@ -13,6 +13,7 @@ export default {
         secondary:"#E8FBFF",
         success:"#00732F",
         orange:"#E7760D",
+        blue:"#072F57"
 
       },
       backgroundImage:{
