@@ -28,8 +28,8 @@ function Footer() {
           </div>
         </div>
         <div className="flex gap-2 w-96 lg:w-full md:justify-end">
-          <button className="rounded-full border border-gray p-1.5">
-            <svg
+          <button className="rounded-full border border-gray p-1.5 hover:text-primary hover:bg-white scale-100 hover:scale-125 duration-150">
+            <svg className=""
               xmlns="http://www.w3.org/2000/svg"
               width="1em"
               height="1em"
@@ -41,7 +41,7 @@ function Footer() {
               />
             </svg>
           </button>
-          <button className="rounded-full border border-gray p-1.5">
+          <button className="rounded-full border border-gray p-1.5 hover:text-primary hover:bg-white scale-100 hover:scale-125 duration-150">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1em"
@@ -54,7 +54,7 @@ function Footer() {
               />
             </svg>
           </button>
-          <button className="rounded-full border border-gray p-1.5">
+          <button className="rounded-full border border-gray p-1.5 hover:text-primary hover:bg-white scale-100 hover:scale-125 duration-150">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1em"
@@ -67,7 +67,7 @@ function Footer() {
               />
             </svg>
           </button>
-          <button className="rounded-full border border-gray p-1.5">
+          <button className="rounded-full border border-gray p-1.5 hover:text-primary hover:bg-white scale-100 hover:scale-125 duration-150">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="1em"

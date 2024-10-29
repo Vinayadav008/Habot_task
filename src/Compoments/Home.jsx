@@ -2,13 +2,8 @@ import React from "react";
 import Header from "../Common/Header";
 import Footer from "../Common/Footer";
 
-import buyer from "../assets/Images/buyer.png";
-import contact from "../assets/Images/contact.png";
-import parties from "../assets/Images/parties.png";
-import role from "../assets/Images/role.png";
-import supplier from "../assets/Images/supplier.png";
-import review from "../assets/Images/review.png";
 import Post from "./Post";
+import Works from "./Works";
 
 function Home() {
   const city = [
@@ -29,8 +24,8 @@ function Home() {
             <p className="font-bold  ">Are You a Supplier?</p>
             <p className="font-light">Explore Matching Opportunities.</p>
           </div>
-          <div className="flex justify-center gap-2">
-            <div className="hidden md:flex gap-2 items-center text-sm bg-white rounded-md px-4 py-3 pr-8 ">
+          <div className="flex flex-col md:flex-row flex-wrap justify-center gap-2">
+            <div className="flex gap-2 items-center text-sm bg-white rounded-md px-4 py-3 md:pr-8 ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="1.5em"
@@ -49,12 +44,12 @@ function Home() {
                 />
               </svg>
               <input
-                className="outline-none md:w-60"
+                className="outline-none w-60"
                 type="text"
                 placeholder="Search your required service here"
               />
             </div>
-            <div className="hidden md:flex gap-2 items-center text-sm bg-white rounded-md px-4 py-3 pr-8 ">
+            <div className="flex gap-2 items-center text-sm bg-white rounded-md px-4 py-3 md:pr-8 ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="1.5em"
@@ -67,14 +62,16 @@ function Home() {
                 />
               </svg>
               <input
-                className="outline-none sm:w-60"
+                className="outline-none w-60"
                 type="text"
                 placeholder="Search your desired location here"
               />
             </div>
-            <button className="bg-success text-white font-medium  rounded-md  px-8">
-              Search
-            </button>
+            <div className="text-center ">
+              <button className="bg-success text-white font-medium  rounded-md px-8 py-3">
+                Search
+              </button>
+            </div>
           </div>
           <p className="text-white text-center">
             <strong> Are you a buyer? </strong> &nbsp;{" "}
@@ -84,7 +81,7 @@ function Home() {
       </div>
 
       {/* -------------Ready to Dive Start--------------- */}
-      <div className="px-8 flex md:flex-nowrap flex-wrap justify-between py-4 gap-2">
+      <div className="px-8 flex md:flex-nowrap flex-wrap justify-between py-10 gap-2">
         <div className="w-full flex flex-col gap-4">
           <p className="text-2xl font-bold">Ready to dive into HABOT?</p>
           <p className="text-sm text-justify">
@@ -117,36 +114,36 @@ function Home() {
         </div>
         <div className="flex flex-wrap w-full md:justify-end gap-4">
           {city.map((i) => (
-           <div className="flex items-center relative">
-           <button className="border border-orange rounded-md w-28 sm:w-40 lg:w-52 h-10 text-sm hover:bg-orange text-center hover:text-white duration-500 peer">
-             {i}
-           </button>
-           <svg
-             className=" absolute   right-8 hidden peer-hover:flex"
-             xmlns="http://www.w3.org/2000/svg"
-             width="2.3em"
-             height="2.3em"
-             viewBox="0 0 40 40"
-           >
-             <path
-               fill="white"
-               d="M24.73 28.146a.5.5 0 0 0 .36-.153l7.359-7.631a.5.5 0 0 0 0-.693l-7.391-7.662a.5.5 0 1 0-.72.693l7.056 7.315l-7.024 7.284a.5.5 0 0 0 .36.847"
-             />
-             <path
-               fill="white"
-               d="M7.91 20.515h24.18a.5.5 0 0 0 0-1H7.91a.5.5 0 0 0 0 1"
-             />
-           </svg>
-         </div>
-         
+            <div className="flex items-center relative">
+              <button className="border border-orange rounded-md w-28 sm:w-40 lg:w-52 h-10 text-sm hover:bg-orange text-center hover:text-white duration-500 peer">
+                {i}
+              </button>
+              <svg
+                className=" absolute   right-6 hidden md:peer-hover:flex"
+                xmlns="http://www.w3.org/2000/svg"
+                width="2.3em"
+                height="2.3em"
+                viewBox="0 0 40 40"
+              >
+                <path
+                  fill="white"
+                  d="M24.73 28.146a.5.5 0 0 0 .36-.153l7.359-7.631a.5.5 0 0 0 0-.693l-7.391-7.662a.5.5 0 1 0-.72.693l7.056 7.315l-7.024 7.284a.5.5 0 0 0 .36.847"
+                />
+                <path
+                  fill="white"
+                  d="M7.91 20.515h24.18a.5.5 0 0 0 0-1H7.91a.5.5 0 0 0 0 1"
+                />
+              </svg>
+            </div>
           ))}
         </div>
       </div>
       {/* -------------Ready to Dive End--------------- */}
-      <Post/>
+
+      <Post />
 
       {/* Verified */}
-      <div className="bg-secondary flex gap-4 flex-wrap justify-between px-8 py-10">
+      <div className="bg-secondary flex gap-4 flex-wrap justify-between px-8 py-16">
         <p className="   text-xl md:text-3xl font-semibold">
           Let Suppliers{" "}
           <span className="underline-offset-4 underline decoration-orange ">
@@ -158,50 +155,7 @@ function Home() {
         </button>
       </div>
 
-      <div className="px-8 py-10 text-center">
-        <p className="font-bold text-xl md:text-3xl ">How it works?</p>
-        <p className="text-justify max-w-2xl mx-auto">
-          Buyers post their needs and review top suppliers, while suppliers
-          complete profiles, connect with potential buyers, and build successful
-          business relationships, sharing valuable feedback.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-3  max-w-4xl mx-auto mt-4">
-          <div className=" bg-secondary p-8  ">
-            <img src={role} className="m-auto mb-4 h-12 w-12" />
-            <p className="font-semibold">Select Your Role and Sign Up</p>
-          </div>
-          <div className="  p-8  ">
-            <img src={buyer} className="m-auto mb-4 h-12 w-12" />
-            <p className="font-semibold">Buyers Post Your Requirements</p>
-          </div>
-          <div className=" bg-secondary p-8  ">
-            <img src={review} className="m-auto mb-4 h-12 w-12" />
-            <p className="font-semibold">
-              {" "}
-              Review, Select, and Contact the Best Suppliers
-            </p>
-          </div>
-          <div className=" p-8  ">
-            <img src={supplier} className="m-auto mb-4 h-12 w-12" />
-            <p className="font-semibold">
-              {" "}
-              Suppliers Complete your profile and get notified for opportunities
-            </p>
-          </div>
-          <div className=" bg-secondary p-8  ">
-            <img src={contact} className="m-auto mb-4 h-12 w-12" />
-            <p className="font-semibold">
-              Contact to Buyers and Share your Quote for the service
-            </p>
-          </div>
-          <div className=" p-8  ">
-            <img src={parties} className="m-auto mb-4 h-12 w-12" />
-            <p className="font-semibold">
-              Both the Parties can Connect and Make Business Leave a Feedback
-            </p>
-          </div>
-        </div>
-      </div>
+      <Works />
 
       <Footer />
     </>
