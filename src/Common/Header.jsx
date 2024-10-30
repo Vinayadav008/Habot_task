@@ -13,10 +13,10 @@ function Header() {
         <div
           className={`hidden md:flex gap-4 items-center font-normal text-sm `}
         >
-          <p className="hidden sm:flex">Find Suppliers</p>
-          <p className="hidden sm:flex">Find Service Tags</p>
+          <p >Find Suppliers</p>
+          <p >Find Service Tags</p>
           <button className="text-success font-medium border border-success rounded-md px-8 py-2 flex">
-            Login <span className="hidden sm:flex">/ Sign Up</span>
+            Login / Sign Up
           </button>
         </div>
         <div
@@ -46,11 +46,11 @@ function Header() {
             : "hidden"
         } md:hidden  font-normal text-sm `}
       >
-        <p className="hidden sm:flex">Find Suppliers</p>
-        <p className="hidden sm:flex">Find Service Tags</p>
+        <p>Find Suppliers</p>
+        <p>Find Service Tags</p>
         <div>
           <button className="text-success font-medium border border-success rounded-md px-8 py-2 flex">
-            Login <span className="hidden sm:flex">/ Sign Up</span>
+            Login / Sign Up
           </button>
         </div>
       </div>
